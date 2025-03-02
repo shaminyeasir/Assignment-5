@@ -157,9 +157,25 @@ document.getElementById('btnch').addEventListener('click',function(){
 
 document.getElementById('btnthm').addEventListener('click',function(){
     const b = document.getElementById('body');
-    const color = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+    let color = '#';
+    const hexNumbers = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
+    for(let i = 0; i < 6 ; i++){
+        color = color + hexNumbers[Math.floor(Math.random()* 16)];
+    }
     const colorstr = 'bg' +'-' +'['+color+']';
     b.classList = "";
-    b.classList.add("colorstr");
+    b.classList.add(colorstr);
 
 })
+
+const tday = new Date();
+const dayIndex = tday.getDay();
+const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const day = days[dayIndex]+' ,';
+const date = tday.toLocaleDateString('en-US',{
+            month: 'short', day: 'numeric', year: 'numeric'
+    });
+ const date1 = date.replace(',','');
+const dayDate = `${day}, <br> ${date1}`;
+document.getElementById('day').innerHTML= day;
+document.getElementById('date').innerHTML= date1;

@@ -4,48 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body id="body" class="bg-[#F4F7FF]">
+<body id="body1" class="bg-[#F4F7FF]">
     <header class="flex justify-between mx-[140px] mt-6 mb-6 p-6 bg-[#FFFFFF] rounded-[16px]">
         <div id="left" class="flex gap-[6px] items-center">
             <img src="assets/logo.png" alt="">
             <p class="text-[36px] text-[#00303C] font-light">Dev<span class="font-bold">Board</span></p>
         </div>
         <div id="right" class="flex gap-[40px] items-center">
-            <button id="btnbtd" class="cursor-pointer px-[20px] py-[10px] bg-[#3752FD] text-[16px] font-[500] text-[#FFFFFF] rounded-[8px]">Back to Desk</button>
+            <button id="btnbtd" class="cursor-pointer px-[20px] py-[10px] bg-[#3752FD] text-[20px] font-[500] text-[#FFFFFF] rounded-[8px]">Back to Desk</button>
         </div>
     </header>
 
     <main class="mx-[140px]">
         <h1 class="text-[36px] text-[#00303C] font-bold text-center my-[20px]">Blogs</h1>
         <div class="bg-[#FFFFFF] rounded-[16px] p-6 mb-[20px]">
-            <h1 class="text-[16px] text-[#00303C] font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
-            <hr>
-            <p>An elemnt can be selected by getElementById, getElementByClassname</p>
+            <h1 class="text-[20px] text-[#00303C] font-bold pb-[20px]">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <hr class="border-dashed">
+            <p class="text-[20px] pt-[20px]">To select an element in the DOM id, class, tag name can be used by using document.getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll() etc.</p>
         </div>
         <div class="bg-[#FFFFFF] rounded-[16px] p-6 mb-[20px]">
-            <h1 class="text-[16px] text-[#00303C] font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
-            <hr>
-            <p></p>
+            <h1 class="text-[20px] text-[#00303C] font-bold pb-[20px]">Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
+            <hr class="border-dashed">
+            <p class="text-[20px] pt-[20px]">innerHTML returns and sets html content of an element, while innerText and textContent returns and sets only text content of an element.<br>innerText returns only visible text contents while textContent returns both visible and hidden text contents. </p>
         </div>
         <div class="bg-[#FFFFFF] rounded-[16px] p-6 mb-[20px]">
-            <h1 class="text-[16px] text-[#00303C] font-bold">Question-3: What is event delegation in the DOM?</h1>
-            <hr>
-            <p></p>
+            <h1 class="text-[20px] text-[#00303C] font-bold pb-[20px]">Question-3: What is event delegation in the DOM?</h1>
+            <hr class="border-dashed">
+            <p class="text-[20px] pt-[20px]">Event delegation is an advanced technique in Javascript which handles event listeners in a very efficient way by using the event bubbling property. In case of event delegation, only one event listener is used with the parent node instead of using several event listeners with the child nodes.</p>
         </div>
         <div class="bg-[#FFFFFF] rounded-[16px] p-6 mb-[20px]">
-            <h1 class="text-[16px] text-[#00303C] font-bold">Question-4: What is event bubbling in the DOM?</h1>
-            <hr>
-            <p></p>
+            <h1 class="text-[20px] text-[16px] text-[#00303C] font-bold pb-[20px]">Question-4: What is event bubbling in the DOM?</h1>
+            <hr class="border-dashed">
+            <p class="text-[20px] pt-[20px]">In DOM, event bubbling is a concept where if a child element is triggered by an event, all elements from parent element to that child element got triggered at first top to bottom and then bottom to top. 
+            </p>
         </div>
-        <div class="bg-[#FFFFFF] rounded-[16px] p-6 mb-[20px]">
-            <h1 class="text-[16px] text-[#00303C] font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
-            <hr>
-            <p></p>
+        <div class="bg-[#FFFFFF] rounded-[16px] p-6 mb-[20px] pb-[20px]">
+            <h1 class="text-[20px] text-[16px] text-[#00303C] font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <hr class="border-dashed">
+            <p class="text-[20px] pt-[20px]">To create an element I can use document.createElement().<br>
+                To add an element I can use appendChild().<br>
+                To remove an element I can use removeChild() or remove().</p>
         </div>
 
     </main>
